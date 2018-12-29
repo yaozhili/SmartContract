@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <title>index</title>
+
+  <script src="./node_modules/web3/dist/web3.js"></script>
+  <script src="./script/abi.js"></script>
+  <script src="./script/jquery.js"></script>
+  <script src="./script/index.js"></script>
+
+</head>
+<body>
+  <div id="head">Donation</div>
+  <div id="accounts">
+    Your accounts:
+  </div>
+
+  <div id="modifyAccount">
+    <div>
+    Input/Modify your default account.
+    </div>
+    <input type="text" id="chooseDefaultAccount">
+    <button id="chooseDefaultAccountButton">Choose your default Account</button>
+    <div id="defaultAccount"></div>
+  </div>
+
+  <div id="newDonate">
+    <div>Input your donation goal (unit:Wei) and press newDonate</div>
+    <input type="text" id="newDonateGoal">
+    <button id="newDonateButton">newDonate</button>
+    <div id="newDonateRet"></div>
+  </div>
+
+  <div id="donate">
+    <div>Input the donation ID and your donation value (unit:Wei) and press Donate</div>
+    <div>Donation ID:</div>
+    <input type="text" id="DonateID">
+    <div>Donation Value (unit:Wei)</div>
+    <input type="text" id="DonateValue">
+    <button id="DonateButton">Donate</button>
+    <div id="DonateRet"></div>
+  </div>
+
+  <div id="getMoney">
+    <div>Get money, input the donation ID and press getMoney</div>
+    <input type="text" id="getMoneyValue">
+    <button id="getMoneyButton">getMoney</button>
+  </div>
+
+  <div id="getDonation">
+    <div>Get donation infomation, input the donation ID and press getDonation</div>
+    <input type="text" id="getDonationValue">
+    <button id="getDonationButton">getDonation</button>
+    <div id="getDonationRet"></div>
+  </div>
+  
+</body>
+
+</html>
